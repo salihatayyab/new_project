@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Best Friends — a little corner for friendship</title>
+  <meta name="description" content="Celebrate friendship with hand-picked quotes, simple ideas, and a place to leave a note for your best friend." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="logo" href="#top">
+        <span class="logo-mark" aria-hidden="true">♥</span>
+        <span>Best Friends</span>
+      </a>
+      <nav class="nav" aria-label="Main">
+        <a href="#why">Why it matters</a>
+        <a href="#quotes">Quotes</a>
+        <a href="#ideas">Ideas</a>
+        <a href="#notes">Notes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" id="top">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="wrap hero-inner">
+        <p class="eyebrow">Welcome, friend</p>
+        <h1>Friendship is the <span class="hl">quietest kind of magic</span>.</h1>
+        <p class="lede">
+          No grand gestures required. Just someone who remembers your coffee order,
+          laughs at your worst jokes, and picks up on the second ring.
+          This little corner of the internet is for them.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#notes">Leave a note</a>
+          <a class="btn btn-ghost" href="#quotes">Read a quote</a>
+        </div>
+        <ul class="hero-stats">
+          <li><strong>3 a.m.</strong><span>calls answered</span></li>
+          <li><strong>∞</strong><span>inside jokes</span></li>
+          <li><strong>0</strong><span>judgements passed</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Why friendship matters</h2>
+          <p>Small things, repeated often, become the best parts of a life.</p>
+        </header>
+        <div class="cards">
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🫂</div>
+            <h3>It lowers the volume</h3>
+            <p>Hard days feel smaller when you don't have to carry them alone. A friend doesn't fix it — they just sit with you in it.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">🌱</div>
+            <h3>It makes you braver</h3>
+            <p>People with a good friend nearby try more things, risk more, and bounce back faster. Courage is often borrowed.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">⏳</div>
+            <h3>It gets better with age</h3>
+            <p>Shared history is a language. Ten years in, half a sentence is enough for a whole conversation.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon" aria-hidden="true">📮</div>
+            <h3>It needs maintenance</h3>
+            <p>Not much. A message, a meme, a "thinking of you". Friendships rarely die of conflict — they fade from silence.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="quotes">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Words for the group chat</h2>
+          <p>Steal one. Send it to someone who deserves it.</p>
+        </header>
+        <figure class="quote-card" aria-live="polite">
+          <blockquote id="quote-text">Loading a little wisdom...</blockquote>
+          <figcaption id="quote-author"></figcaption>
+          <button class="btn btn-primary" id="quote-next" type="button">Another one</button>
+        </figure>
+      </div>
+    </section>
+
+    <section class="section" id="ideas">
+      <div class="wrap">
+        <header class="section-head">
+          <h2>Ten-minute friendship ideas</h2>
+          <p>Tick one off today. That's the whole assignment.</p>
+        </header>
+
+        <div class="progress" role="group" aria-label="Ideas completed">
+          <div class="progress-bar"><span id="progress-fill"></span></div>
+          <p class="progress-label"><span id="progress-count">0</span> of <span id="progress-total">6</span> done</p>
+        </div>
+
+        <ul class="checklist" id="checklist">
+          <li>
+            <label>
+              <input type="checkbox" data-idea="voice" />
+              <span>Send a voice note instead of a text — tone says more than typing.</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-idea="memory" />
+              <span>Dig up an old photo and send it with zero context.</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-idea="food" />
+              <span>Order their favourite snack to their door.</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-idea="call" />
+              <span>Call just to ask how the week actually went.</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-idea="plan" />
+              <span>Put a date in the calendar. Vague plans don't happen.</span>
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="checkbox" data-idea="thanks" />
+              <span>Tell them one specific thing they've done that you still think about.</span>
+            </label>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section section-alt" id="notes">
+      <div class="wrap notes-wrap">
+        <div class="notes-intro">
+          <header class="section-head">
+            <h2>The note wall</h2>
+            <p>Write something kind. It stays in your browser — no accounts, no servers.</p>
+          </header>
+          <p class="fine-print">
+            Notes are saved locally on this device using <code>localStorage</code>,
+            so they'll still be here next time you visit.
+          </p>
+        </div>
+
+        <form class="note-form" id="note-form" novalidate>
+          <div class="field">
+            <label for="note-name">Your name</label>
+            <input id="note-name" name="name" type="text" maxlength="24" placeholder="Alex" required />
+          </div>
+          <div class="field">
+            <label for="note-text">Your note</label>
+            <textarea id="note-text" name="note" rows="3" maxlength="180" placeholder="Thanks for always replying, even at 2 a.m." required></textarea>
+          </div>
+          <div class="form-row">
+            <button class="btn btn-primary" type="submit">Pin it to the wall</button>
+            <button class="btn btn-ghost" type="button" id="note-clear">Clear all</button>
+          </div>
+          <p class="form-status" id="form-status" role="status"></p>
+        </form>
+
+        <ul class="note-list" id="note-list"></ul>
+        <p class="empty-state" id="empty-state">The wall is empty. Be the first to leave something nice.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p>Made for the people who make life lighter.</p>
+      <p class="footer-meta">© <span id="year">2025</span> Best Friends · Built with plain HTML, CSS &amp; JavaScript.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
